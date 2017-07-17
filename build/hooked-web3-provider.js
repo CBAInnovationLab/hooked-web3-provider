@@ -145,10 +145,12 @@ var factory = function factory(Web3) {
               // hence the need for global_nonces.
               // We call directly to our own sendAsync method, because the web3 provider
               // is not guaranteed to be set.
+              // IMPORTANT: Quorum throws an exception if 'pending' is sent here,
+              // so changing to 'latest'.
               _this3.sendAsync({
                 jsonrpc: '2.0',
                 method: 'eth_getTransactionCount',
-                params: [sender, "pending"],
+                params: [sender, "latest"],
                 id: new Date().getTime()
               }, function (err, result) {
                 if (err != null) {
