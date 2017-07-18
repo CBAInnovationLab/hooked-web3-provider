@@ -9,11 +9,6 @@
     "type": "git",
     "url": "https://github.com/consensys/hooked-web3-provider.git"
   },
-  "devDependencies": {
-    "jquery": "*",
-    "ethereumjs-accounts": "git+https://github.com/tcoulter/ethereumjs-accounts.git",
-    "bignumber.js": "*"
-  },
   "license": "MIT License. Copyright Consensys LLC, and authors. All rights reserved.",
   "dependencies": {
     "web3": "github:CBAInnovationLab/web3.js"
